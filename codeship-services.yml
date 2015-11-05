@@ -1,0 +1,11 @@
+pgci:
+  build:
+    image: codeship/pgci
+    dockerfile: Dockerfile
+
+pgcitest:
+  build:
+    image: codeship/pgcitest
+    dockerfile: Dockerfile.test
+  links:
+    - pgci

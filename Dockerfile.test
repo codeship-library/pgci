@@ -1,0 +1,11 @@
+FROM debian:jessie
+MAINTAINER maintainer@codeship.com
+
+RUN apt-get update && \
+    apt-get install -y postgresql-client-9.4 && \
+    rm -rf /var/lib/apt/lists/*
+
+RUN mkdir /app
+WORKDIR /app
+
+ADD ./ci ./

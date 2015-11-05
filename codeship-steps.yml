@@ -1,0 +1,9 @@
+- name: test
+  service: pgcitest
+  command: ./ci
+- name: push
+  type: push
+  service: pgci
+  image_name: codeship/pgci
+  registry: https://index.docker.io/v1/
+  encrypted_dockercfg_path: dockercfg.encrypted

@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -ex
+
+export PGPASSWORD=password
+
+createdb -U codeship -h pgci codeship
+psql -U codeship -h pgci -c "SELECT VERSION();" codeship

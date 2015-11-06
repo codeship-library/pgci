@@ -3,5 +3,5 @@ set -ex
 
 export PGPASSWORD=password
 
-createdb -U codeship -h pgci codeship
-psql -U codeship -h pgci -c "SELECT VERSION();" codeship
+createdb -U postgres -h pgci codeship
+psql -U postgres -h pgci -c "SELECT VERSION();" codeship

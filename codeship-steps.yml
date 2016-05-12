@@ -5,6 +5,6 @@
   type: push
   service: pgci
   image_name: codeship/pgci
-  image_tag: 9.4
+  image_tag: 9.5
   registry: https://index.docker.io/v1/
   encrypted_dockercfg_path: dockercfg.encrypted

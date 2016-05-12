@@ -22,7 +22,6 @@ RUN echo "\
 synchronous_commit = off\n\
 fsync = off\n\
 full_page_writes = off\n\
-checkpoint_segments = 100\n\
 wal_writer_delay = 5000ms\n\
 listen_addresses = '*'\n\
 " >> /etc/postgresql/9.5/main/postgresql.conf
